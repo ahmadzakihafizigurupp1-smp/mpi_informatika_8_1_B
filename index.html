@@ -372,7 +372,7 @@
         ];
 
         // Ganti dengan URL eksekusi dari script.google.com hasil deploy file Code.gs
-        const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbw-g-g-YOUR_MACRO_ID_HERE/exec"; 
+        const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxKn7karU69CUeB1kwzyg-ZZKvEcOs-NiSSh-MlPAG1e_nAARV5X4iIqkm8I5iCHIzs/exec"; 
         
         let currentTab = 0;
 
@@ -572,7 +572,7 @@
             // Send to GAS
             try {
                 // If URL is not changed from placeholder, just simulate success for preview
-                if(GAS_WEB_APP_URL.includes("https://script.google.com/macros/s/AKfycbxKn7karU69CUeB1kwzyg-ZZKvEcOs-NiSSh-MlPAG1e_nAARV5X4iIqkm8I5iCHIzs/exec")) {
+                if(GAS_WEB_APP_URL.includes("YOUR_MACRO_ID_HERE")) {
                     console.log("GAS URL placeholder detected. Simulating sending data:", payload);
                     setTimeout(() => {
                         handlePostSubmit(true, "Data dinilai! (Mode Simulasi - URL Script belum diisi)");
